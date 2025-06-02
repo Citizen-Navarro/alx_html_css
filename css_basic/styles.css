@@ -1,0 +1,39 @@
+/* Flexbox layout styles */
+
+/* Make the body a vertical flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height */
+    margin: 0;
+}
+
+/* Make the main tag a horizontal flex container */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* It should grow and shrink as needed */
+}
+
+/* Article should take 2/3 of space */
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+/* Aside should take 1/3 of space */
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #e9e9e9;
+}
+
+/* Optional: Give header and footer some spacing */
+header,
+footer {
+    padding: 1rem;
+    background-color: #ccc;
+}
