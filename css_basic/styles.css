@@ -1,21 +1,16 @@
-/* Flexbox layout styles */
-
-/* Make the body a vertical flex container */
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     margin: 0;
 }
 
-/* Make the main tag a horizontal flex container */
 main {
     display: flex;
     flex-direction: row;
-    flex: auto; /* It should grow and shrink as needed */
+    flex: auto;
 }
 
-/* Article should take 2/3 of space */
 article {
     flex: 2;
     overflow-y: auto;
@@ -23,7 +18,6 @@ article {
     background-color: #ffffff;
 }
 
-/* Aside should take 1/3 of space */
 aside {
     flex: 1;
     overflow-y: auto;
@@ -31,14 +25,12 @@ aside {
     background-color: #e9e9e9;
 }
 
-/* Optional: Give header and footer some spacing */
 header,
 footer {
     padding: 1rem;
     background-color: #ccc;
 }
 
-/* Make the logo bigger and styled */
 .logo {
   font-size: 30px;
   font-weight: bold;
@@ -46,7 +38,6 @@ footer {
   padding-right: 20px;
 }
 
-/* Customize article content */
 article {
   background-color: #f5f5f5;
   padding: 20px;
@@ -55,7 +46,6 @@ article {
   color: #333;
 }
 
-/* Style table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -75,7 +65,6 @@ td {
   background-color: #eee;
 }
 
-/* Style image */
 img {
   max-width: 100%;
   height: auto;

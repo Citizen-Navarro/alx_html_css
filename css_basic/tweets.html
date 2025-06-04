@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tweets - My First Portfolio</title>
-  <link href="base.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-  <!-- HEADER: Navigation menu -->
-  <header>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="tweets.html">Tweets</a></li>
-    </ul>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweets Page</title>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="works_on_smartphone">
+    <!-- HEADER -->
+    <header>
+      <ul>
+        <li class="logo">&#9733;</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+      </ul>
+    </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <article>
-      <h1>My Tweet</h1>
-      <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">
-          Raising an Agent - Episode 6<br><br>
-          In this episode, Quinn and Thorsten discuss Claude 4, sub-agents, background agents, and they share "hot tips" for agentic coding.<br><br>
-          0:00 Introduction<br>
-          0:45 Welcome to Raising an Agent: Episode Six<br>
-          0:59 Coding experiences and challenges<br>
-          3:37 Opening up… 
-          <a href="https://t.co/D7i0IOHaqy">pic.twitter.com/D7i0IOHaqy</a>
-        </p>
-        — Amp — Research Preview (@AmpCode) 
-        <a href="https://twitter.com/AmpCode/status/1928132299213918344?ref_src=twsrc%5Etfw">May 29, 2025</a>
-      </blockquote> 
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </article>
-    <aside>
-      <p>placeholder to add comment thread later</p>
-    </aside>
-  </main>
+    <!-- MAIN CONTENT -->
+    <main>
+      <article>
+        <h1>Latest Tweets</h1>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Tweet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>@Citizen</td>
+              <td>My first tweet, testing this layout!</td>
+            </tr>
+            <tr>
+              <td>@ALX_Africa</td>
+              <td>Welcome to the Flexbox revolution 🚀</td>
+            </tr>
+            <tr>
+              <td>@NavarroDev</td>
+              <td>Design is not just how it looks…</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Made by Citizen Mbatha - <a href="https://github.com/Citizen-Navarro" target="_blank">here</a></p>
-  </footer>
-</body>
+      <aside>
+        <p>Follow us on GitHub and stay tuned for more!</p>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Made by Citizen Mbatha - <a href="https://github.com/Citizen-Navarro" target="_blank">here</a></p>
+    </footer>
+  </body>
 </html>
