@@ -529,3 +529,50 @@ nav ul li a {
 .cta-button:hover {
   background-color: #C271FF;
 }
+
+/* FAQ Section */
+.faq {
+  background-color: #ffffff;
+  padding: 100px 80px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.faq h2 {
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: #071629;
+  margin-bottom: 80px;
+}
+
+.faq-columns {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-item {
+  margin-bottom: 60px;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #071629;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #071629;
+  line-height: 1.8;
+  white-space: normal; /* Allow wrapping */
+}
