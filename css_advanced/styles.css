@@ -173,7 +173,7 @@ nav ul li a {
   color: #FFFFFF;
 }
 
-/* === Testimonial Section === */
+/* === New Testimonial Section === */
 .testimonial {
   background-color: #C271FF;
   color: #ffffff;
@@ -214,4 +214,238 @@ nav ul li a {
   text-transform: lowercase;
   margin-top: 5px;
   font-size: 16px;
+}
+
+/* === Most Popular Tutorials Section === */
+.popular-tutorials {
+  padding: 80px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.popular-tutorials h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #161616;
+  font-weight: 300;
+}
+
+.popular-tutorials h2 .highlight {
+  color: #C271FF;
+  font-weight: 700;
+}
+
+.tutorial-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tutorial-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.tutorial-card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.tutorial-card-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #161616;
+}
+
+.tutorial-card-content p {
+  font-size: 14px;
+  color: #555;
+  opacity: 0.9;
+}
+
+/* Tutorials Section - Video List Styling */
+.tutorials {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: 300; /* Light as default */
+  color: #333;
+  text-align: center; /* Optional: center it */
+}
+
+.section-heading .light {
+  font-weight: 300; /* Light */
+  color: #333;
+}
+
+.section-heading .highlight {
+  font-weight: 700; /* Bold */
+  color: #C271FF; /* Purple */
+}
+
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tutorial-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.tutorial-item:hover {
+  transform: translateY(-5px);
+}
+
+.tutorial-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.tutorial-item h3 {
+  font-size: 1.2rem;
+  color: #111;
+  margin: 15px 0 10px;
+  text-align: left;
+}
+
+.tutorial-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: flex-start; /* Align left */
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author h4 {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+.rating i {
+  color: #ffcc00;
+  margin-right: 2px;
+}
+
+.duration {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* --- UPDATED STYLES FOR TUTORIALS 1-4 --- */
+.tutorial-item:nth-child(-n+4) {
+  text-align: left;
+}
+
+.tutorial-item:nth-child(-n+4) .author {
+  justify-content: flex-start;
+}
+
+.tutorial-item:nth-child(-n+4) .rating-duration-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.tutorial-item:nth-child(-n+4) .rating {
+  margin: 0;
+}
+
+.tutorial-item:nth-child(-n+4) .duration {
+  margin: 0;
+  text-align: right;
+}
+
+/* === Custom Overrides for Tutorials 1-4 === */
+.tutorial-item:nth-child(-n+4) .author h4 {
+  color: #C271FF; /* Phillip Massey */
+}
+
+.tutorial-item:nth-child(-n+4) .rating i {
+  color: #C271FF; /* Stars */
+}
+
+.tutorial-item:nth-child(-n+4) .duration {
+  color: #C271FF; /* Duration */
+}
+
+/* Remove rounded corners from the preview images of tutorials 1–4 only */
+.tutorial-item:nth-child(-n+4) img {
+  border-radius: 0;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  object-fit: contain;
+  max-width: none;
 }
