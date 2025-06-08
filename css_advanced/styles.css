@@ -17,13 +17,17 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 80px;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 nav {
+  max-width: 1200px; /* Match footer max-width */
+  margin: 0 auto;     /* Center it */
+  padding: 40px 20px 0;    /* Match footer horizontal padding */
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -50,16 +54,19 @@ nav ul li a {
   background-image: url('./images/Object.png');
   background-size: cover;
   background-position: center;
-  padding: 120px 80px 160px;
+  background-repeat: no-repeat;
+  height: 1200px; /* Lock to image height */
+  position: relative;
   color: #fff;
   text-align: center;
   overflow: hidden;
+  padding: 120px 80px 160px;
 }
 
 .hero-content h1 {
   font-size: 120px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .keywords {
@@ -68,7 +75,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .cta-button {
@@ -92,8 +99,9 @@ nav ul li a {
 
 /* === Pros Section === */
 .pros {
-  margin-top: 0;
-  padding: 100px 80px 60px;
+  margin-top: 320px; /* This gently lowers the entire pros block */
+  padding: 0 80px;
+  text-align: center;
 }
 
 .pros h2 {
@@ -112,10 +120,9 @@ nav ul li a {
 .pro-list {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 220px; /* Increase or decrease for tighter/wider spacing */
   flex-wrap: wrap;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-top: 40px; /* Adds breathing room between heading and faces */
 }
 
 .pro {
@@ -370,11 +377,6 @@ nav ul li a {
   text-align: left;
 }
 
-.rating i {
-  color: #ffcc00;
-  margin-right: 2px;
-}
-
 .duration {
   font-size: 0.85rem;
   color: #888;
@@ -412,12 +414,29 @@ nav ul li a {
   color: #C271FF; /* Phillip Massey */
 }
 
-.tutorial-item:nth-child(-n+4) .rating i {
-  color: #C271FF; /* Stars */
+.tutorial-item:nth-child(-n+4) .duration {
+  color: #C271FF; /* Duration */
+}
+
+/* Align rating image left, duration right, in one line */
+.tutorial-item:nth-child(-n+4) .video-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tutorial-item:nth-child(-n+4) .rating-img {
+  display: block;
+  max-height: 18px; /* adjust height to match duration line-height */
+  object-fit: contain;
 }
 
 .tutorial-item:nth-child(-n+4) .duration {
-  color: #C271FF; /* Duration */
+  margin: 0;
+  font-size: 0.85rem;
+  color: #C271FF;
+  text-align: right;
 }
 
 /* Remove rounded corners from the preview images of tutorials 1–4 only */
@@ -451,7 +470,6 @@ nav ul li a {
 }
 
 /* Membership Section Styling */
-
 .membership {
   background-color: #1a1a2e;
   font-family: 'Source Sans Pro', sans-serif;
@@ -475,10 +493,11 @@ nav ul li a {
 }
 
 .membership-benefits {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 160px; /* Adjust this number for tighter spacing */
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  padding: 0 10px;
 }
 
 .benefit {
@@ -486,12 +505,13 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 180px;
 }
 
 .benefit img {
   width: 44px;
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .benefit h3 {
@@ -499,7 +519,7 @@ nav ul li a {
   font-size: 18px;
   font-weight: 600; /* semi-bold */
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .benefit p {
@@ -507,7 +527,7 @@ nav ul li a {
   font-size: 14px;
   font-weight: 300; /* light */
   color: #ffffffcc; /* light white for softer look */
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .cta-button {
@@ -521,6 +541,7 @@ nav ul li a {
   cursor: pointer;
   transition: background-color 0.3s ease;
   white-space: nowrap;
+  margin-top: 100px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -575,4 +596,70 @@ nav ul li a {
   color: #071629;
   line-height: 1.8;
   white-space: normal; /* Allow wrapping */
+}
+
+.faq-column:first-child {
+  padding-left: 280px; /* or use margin-left: 40px; depending on layout */
+}
+
+/* Footer Section Styling */
+footer {
+  background-color: #0B0E23; /* Navy background */
+  padding: 40px 20px;
+  color: #FFFFFF; /* White text */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 60px;
+}
+
+.footer-brand img {
+  width: 120px; /* Adjust as per Figma */
+  height: auto;
+}
+
+.socials {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.socials i {
+  font-size: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.socials i:hover,
+.socials i:focus {
+  color: #C271FF;
+  outline: none;
+}
+
+/* Copyright below, centered, smaller and translucent */
+footer p {
+  width: 100%;
+  text-align: center;
+  font-weight: 400; /* Regular */
+  font-size: 12px;
+  opacity: 0.36;
+  margin-top: 80px;
 }
